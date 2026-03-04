@@ -1,16 +1,6 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Project/Maven2/JavaApp/src/main/java/${packagePath}/${mainClassName}.java to edit this template
- */
-
 package com.mycompany.startcapgemini;
 
 import java.util.Scanner;
-
-/**
- *
- * @author niifh
- */
 
 class Greetings {
     public String getGreetings() {
@@ -27,7 +17,29 @@ public class StartCapgemini {
         var input = new Scanner(System.in);
         System.out.println(new Greetings().getGreetings());
         System.out.println("Insira seu nome: ");
-        String nome = input.nextLine();
+        var nome = input.nextLine();
         System.out.println(new Greetings().getSalute(nome));
+        input.close();
+        
+        // comentário de linha
+        
+        /* 
+            comentários em blocos
+            varias linhas
+        */
+        
+        /** 
+            comentários de documentação
+        */
+        
+        int idade = 10;
+        float peso = 15.5f;
+        double peso_mais = 15.555d;
+        char letra = 'd';
+        byte ponto = 2;
+        boolean ativo = true;
+        String name = "Leandro";
+        
+        System.out.println(ativo);
     }
 }
