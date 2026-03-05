@@ -19,6 +19,12 @@ public class LaçoDeRepetição {
             System.out.println("O numero é " + numero);
             numero++;
         }
+        
+        int a = 1;
+        while(a < 10) {
+            System.out.println("A: " + a);
+            a++;
+        }
     }
     
 }
