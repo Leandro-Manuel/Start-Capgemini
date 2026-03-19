@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package exercicios;
+package exercicios_logica;
 import java.util.Scanner;
 // Escreva um algoritmo que receba o preço de custo e o preço de venda de 40 produtos
 // mostre como resultado se houve lucro, prejuizo ou empate para cada produto. 

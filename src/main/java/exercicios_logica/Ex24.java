@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package exercicios;
+package exercicios_logica;
 
 /* 
 Faça um algoritmo que receba "N" numeros e mostre positivo, negativo ou zero para cada numero

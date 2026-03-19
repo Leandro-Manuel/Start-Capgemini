@@ -1,4 +1,4 @@
-package exercicios;
+package exercicios_logica;
 import java.util.Scanner;
 /*
 A concessionária de veículos “CARANGO VELHO” está vendendo os seus veículos com desconto. Faça
