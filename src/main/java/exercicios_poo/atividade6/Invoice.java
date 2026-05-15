@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package exercicios_poo.atividade6;
 
 public class Invoice {
@@ -11,18 +7,10 @@ public class Invoice {
     private float preco;
     
     public Invoice(int numero, String descricao, int qtd, float precoo) {
-        if(qtd < 0) {
-            this.quantidade = 0;
-        }else {
-            this.quantidade = qtd;
-        }
-        if(precoo < 0) {
-            this.preco = 0.0f;
-        }else {
-            this.preco = precoo;
-        }
-        this.numero_item = numero;
-        this.descricao = descricao;
+        this.setNumero_item(numero);
+        this.setDescricao(descricao);
+        this.setQuantidade(quantidade);
+        this.setPreco(preco);     
     }
     
     public int getNumero_item() {
@@ -46,7 +34,11 @@ public class Invoice {
     }
     
     public void setQuantidade(int quantidade) {
-        this.quantidade = quantidade;
+        if(quantidade < 0) {
+            this.quantidade = 0;
+        }else {
+            this.quantidade = quantidade;
+        }
     }
     
     public float getPreco() {
@@ -54,10 +46,14 @@ public class Invoice {
     }
     
     public void setPreco(float preco) {
-        this.preco = preco;
+        if(preco < 0) {
+            this.preco = 0.0f;
+        } else {
+            this.preco = preco;
+        }
     }
     
-    public float getInvoiceAmount() {
+    public double getInvoiceAmount() {
         return quantidade * preco;
     }
     

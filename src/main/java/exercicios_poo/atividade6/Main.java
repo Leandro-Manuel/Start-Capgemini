@@ -5,6 +5,13 @@ import java.util.Scanner;
 atividade 6 da lista de exercicios de POO
 */
 
+/*
+neste exercicio eu aprendi que podemos usar verificacoes no metodo construtor,
+mas o ideal seria utilizar verificacoes nos metodos set's da classe e usa-las no
+metodo construtor, isso deixa o codigo muito facil de entender e legivel.
+alem disso, quando fazemos verificacoes somente no metodo construtor, os metodos set
+ainda poderam ser utilizados para burlar nossa regra 
+*/
 
 class Menu {
     public String getMenu() {
