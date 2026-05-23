@@ -1,0 +1,42 @@
+<!DOCTYPE>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contato</title>
+    </head>
+    <body>
+        <header>
+
+        </header>
+            <form>
+                <input type="text" placeholder="Nome" name="nome"/> <br/>
+                <input type="number" name="idade" placeholder="Idade"/> <br/>
+                <input type="email" name="email" placeholder="Email"/> <br/>
+                <input type="tel" name="telefone" placeholder="Telefone"/> <br/>
+                <input type="password" placeholder="Senha" name="senha"/> <br/>
+                <input type="url" name="linkedIn" placeholder="Rede social"/> <br/>
+                Urgência<input type="range" name="urgencia" min=0 max=100 step=0.1/> <br/>
+                <input type="checkbox" name="dia-da-semana" value="2"/> Segunda-feira <br/>
+                <input type="checkbox" name="dia-da-semana" value="4"/> Quarta-feira <br/>
+                <input type="checkbox" name="dia-da-semana" value="6"/> Sexta-feira <br/>
+                <input type="radio" name="horario" value="manha"/>Manhã <br/>
+                <input type="radio" name="horario" value="tarde"/>Tarde <br/>
+                <input type="radio" name="horario" value="noite"/>Noite <br/>
+                <textarea cols="60" rows="10"></textarea> <br/>
+                Cidade <input list="cidade" name="cidade"/>
+                <datalist id="cidade">
+                    <option value="Recife">Recife</option>
+                    <option value="Olinda">Olinda</option>
+                    <option value="Paulista">Paulista</option>
+                </datalist> <br/>
+                <button>outra ação</button>
+                <button type="reset">limpar</button>
+                <button type="submit">Enviar</button>
+            </form>
+        </main>
+        <footer>
+
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,72 @@
+html {
+    font-family: sans-serif;
+    background-color: rgb(202, 186, 186);
+    font-size: 1.2 rem;
+    font-style: normal;
+}
+
+a {
+    color: red;
+    cursor: pointer;
+}
+
+a:hover {
+    color: rgb(6, 22, 243);
+    text-decoration: underline;
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+main p {
+    text-indent: 2rem;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+}
+
+main {
+    background-color:rgb(148, 63, 14);
+    background-image: url("./eu.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size:cover;
+}
+
+h1 {
+    color:red;
+}
+
+main h1 {
+    color:black;
+}
+
+h2 {
+    color:red;
+    text-decoration: underline;
+}
+
+.titulo-aula-branco {
+    color:rgba(175, 141, 90, 1);
+}
+
+.texto-azul {
+    color:rgb(102, 102, 218);
+}
+
+.texto-vermelho {
+    color:red;
+}
+
+#h3-testando {
+    color: #AAAAAA;
+    text-decoration: line-through;
+}
+
+.texto-vermelho .comentario-destaque {
+    color:green;
+}
+
+.comentario-destaque {
+    color:blueviolet;
+}
