@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caixa de mensagem</title>
+    <!--JS-->
+    <script>
+        //Exibindo uma caixa de mensagem
+        window.alert("Aprendendo JavaScript");
+        //variaveis
+        var nome = "Leandro";
+        var idade = 25;
+        var peso = 59.5;
+        var altura = 1.70;
+        var estuda = true;
+        var trabalha = false;
+
+        //exibir os dados
+        window.alert(nome);
+        window.alert(idade);
+        window.alert(peso);
+        window.alert(altura);
+        window.alert(estuda);
+        window.alert(trabalha);
+
+        /* verificações
+         Maior
+        window.alert(5 > 4);
+        Menor
+        window.alert(5 < 4);
+        Igual
+        window.alert(5 == 4);
+        Igual ou maior
+        window.alert(5 >= 4);
+        Menor ou igual
+        window.alert(10 <= 50);
+        Diferente
+        window.alert(8 != 9);
+        aula G
+        */
+
+        var idade = 20;
+        //condicional
+        if(idade >= 18) {
+            window.alert("Você é maior de idade!");
+        }else {
+            window.alert("Não é maior de idade!");
+        }
+        
+        //condicional aninhada
+        var media = 7.5;
+        if(media == 10) {
+            alert("Nota máxima!");
+        }else if(media >= 7) {
+            alert("Passou na média!");
+        }else if(media <= 7) {
+            alert("Recuperação!");
+        }else {
+            alert("Reprovado!");
+        }
+
+        // operador lógico E
+        var mediaTotal = 10;
+        var faltas = 20;
+        if(mediaTotal >= 7 && faltas <= 15) {
+            alert("Aprovado!");
+        }else {
+            alert("Reprovado!");
+        }
+
+        //operador lógico ou
+        var trabalho1 = 7;
+        var trabalho2 = 8;
+        if(trabalho1 >= 7 || trabalho2 >= 7) {
+            alert("Aprovado!");
+        }else {
+            alert("Reprovado!");
+        }
+
+        //operador logico not
+        var job = true;
+        if(!trabalho == true) {
+            alert("Você trabalha!");
+        }else {
+            alert("Voce não trabalha!");
+        }
+
+        //estrutura de escolha
+        var escolha = 1;
+        switch(escolha) {
+            case 1:
+                alert("Número 1");
+                break;
+            case 2:
+                alert("Número 2");
+                break;
+            case 3:
+                alert("Número 3");
+                break;
+            default:
+                alert("Inválido!");
+        }
+
+        //laço de repetição while
+        var cont = 1;
+        while(cont <= 10) {
+            alert("numero: " + cont);
+            cont++;
+        }
+
+        //laço de repetição do while
+        var indice = 1;
+        do {
+            alert(indice);
+            indice++;
+        }while(indice <= 3);
+
+        //laço de repetição for
+        for(var indice=1; indice <=3; indice++) {
+            window.alert("O indice vale " + indice);
+        }
+
+        //vetor
+        var cursos = ["Html","Css","JavaScript"];
+        //exibir o vetor
+        alert(cursos);
+
+        //vetor de objetos
+        var cursos2 = [
+            {nome:"HTML", carga: 20, sala: 1},
+            {nome:"CSS", carga: 12, sala: 2},
+            {nome:"JavaScript", carga: 20, sala: 3}
+        ];
+        //exibir vetor de objetos
+        alert(cursos2[1].nome + " " + cursos2[1].carga + " " + cursos2[2].sala);  
+
+
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

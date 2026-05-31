@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento com CSS</title>
+    <script>
+        function acao() {
+            var texto = document.getElementsByTagName("h1")[0];
+            texto.style.color="#FF0000";
+            texto.style.fontSize = "2rem";
+
+            //Altera o conteúdo
+            texto.innerHTML = "Curso de JavaScript";
+        }
+    </script>
+</head>
+<body>
+    <h1>JavaScritp</h1>
+    <button onclick="acao()">Clique aqui</button>
+</body>
+</html>

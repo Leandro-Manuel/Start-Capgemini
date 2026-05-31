@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+    <script>
+        //Eventos são ações ou ocorrências que acontecem no navegador, como um clique do mouse, o envio de um formulario, eles são a base para criar paginas web interativas
+
+        //Evento clique
+        //criar a função mensagem
+        function mensagem() {
+            alert("você clicou no botão");
+        }
+
+        //Evento onChange
+        function mensagem2() {
+            //Obter o curso selecionado
+            var curso = document.getElementById("cursos").value;
+            //exibir o curso selecionado
+            alert("Curso selecionado: " + curso);
+        }
+        //Evento de carregamento
+        //exclusivo da tag body
+        function mensagem3() {
+            alert("Seja bem-vindo ao meu site!");
+        }
+
+        /*Evento de teclado
+        onKeyUp: exibe o caractere
+        e depois executa a ação
+
+        onKeyDown: executa a ação e depois exibe o caractere
+
+        onKeyPress: executa a ação e depois exibe o caractere
+        não tem suporte as seguintes teclas: F1...F12,ALT,CTRL,SHIFT...
+        */
+        function exibir() {
+            //obter o valor do campo texto
+            var campo = document.getElementById("campo").value;
+            //exibir o conteúdo armazenado no campo
+            alert(campo);
+        }
+
+    </script>
+</head>
+<body onload="mensagem3()">
+    <button onclick="mensagem()">Clique Aqui</button>
+    <select onchange="mensagem2()" id="cursos">
+        <option>Escolha seu curso</option>
+        <option>HTML</option>
+        <option>CSS</option>
+        <option>JavaScript</option>
+    </select>
+    <input type="text" id="campo" onkeyup="exibir()">
+</body>
+</html>

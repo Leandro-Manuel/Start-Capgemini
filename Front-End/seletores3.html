@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletor ID</title>
+    <script>
+        function exibirConteudo() {
+            var conteudo = document.getElementById("campo");
+            //exibir conteudo
+            alert(campo.value);
+            //apagar o conteudo
+            campo.value="";
+        }
+    </script>
+</head>
+<body>
+    <input type="texto" id="campo">
+    <button onclick="exibirConteudo()">Clique aqui</button>
+</body>
+</html>
